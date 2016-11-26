@@ -37,7 +37,7 @@ namespace OS_2_Files_13
                     return;
                 }
                 //Вызываем методы сравнений
-                //Создаем потоки, в котором выводим в текстбокс сообщения, возвращаемые анализаторами
+                //Создаем потоки, в котором выводим в текстбокс сообщения, возвращаемые анализаторами/
                 Thread countFilesThread = new Thread(new ThreadStart(new Action(() => 
                     tb_result.Invoke(new Action(()=>
                         tb_result.AppendText(CountAnalyser.Analysis(dir1, dir2)))))));
